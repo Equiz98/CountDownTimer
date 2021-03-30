@@ -1,0 +1,397 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* -------ESTILOS DE LA SECCION DEL COUNTDOWN--------- */
+
+.contenedor-countdown{
+
+    max-width: 100%;
+    height: 100vh;
+}
+
+
+
+video{
+    max-width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -10;
+    background-size: 100%;
+
+}
+
+.contenedor-countdown-texto{
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    color: #f4ac67;
+}
+
+.contenedor-countdown-tittle{
+    font-size: 80px;
+    font-family: 'Staatliches', cursive;
+    margin-left: 5%;
+}
+
+
+.contenedor-countdown-lead{
+    font-size: 35px;
+    font-family: 'Staatliches', cursive;
+    margin-left: 5%;
+}
+
+#cuenta {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    top: 20%;
+	
+   
+}
+
+.simply-section {
+	/* background: rgba(26, 18, 18, 0.1); */
+    color: #f8d1be;
+    font-family: 'Bebas Neue', cursive;
+	width: 180px;
+	height: 180px;
+	margin: 0 20px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.simply-amount {
+	display: block;
+	font-size: 95px;
+	font-weight: 700;
+}
+
+.simply-word {
+	font-weight: 300;
+	font-size: 30px;
+    position: relative;
+    top: -85px;
+    color: #87696b;
+    letter-spacing: 5px;
+}
+
+.contenedor-countdown-logo-company{
+    color: white;
+    font-family: 'Roboto';
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin-right: 50px;
+}
+
+.svg-inline--arrowdown{
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    animation: flecha 2s ease infinite;
+}
+
+@keyframes flecha{
+    0%{transform: translateY(0px);}
+    /* 25%{transform: translate(10px);} */
+    50%{transform: translateY(10px);}
+    100%{transform: translateY(0px);}
+}
+
+/* -----------ESTILOS DE LA SECCION DE TICKETCOUTDOWN--------- */
+
+.contenedor-ticket-informacion{
+background-color: #111 ;
+    width: 100%;
+    height: 1000px;
+}
+
+.contenedor-ticket-informacion>h1{
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+    font-size: 45px;
+    padding-top:35px;
+    padding-left: 40%;    
+}
+
+
+
+.contenedor-ticket-informacion-tipos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket-informacion-tipos-categorias{
+    position: relative;
+    top: 5%;
+    width: 700px;
+    height: 150px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+    
+}
+
+
+.informacion-tipos-ticket-texto h2{
+    font-family:'Bebas Neue';
+    color: #f4ac67;
+    font-size: 40px;
+    padding-left: 2%;
+}
+
+
+.informacion-tipos-ticket-texto p{
+    font-family: 'Roboto';
+    font-size: 15px;
+    text-align: left;
+    margin-left: 2%;
+    max-width: 550px;
+    
+}
+
+.informacion-ticket-linea{
+    background-color: #444;
+    height: 100%;
+    width: 5px;
+}
+
+.infromacion-ticket-buttom button{
+    width: 145px;
+    height: 100%;
+    background: #e6e6e6;
+}
+
+.infromacion-ticket-buttom button:hover{
+    background: #ccc;
+    transition: 0.3s;
+}
+
+/* ------------ ESTILOS DE LA SECCION REDES SOCIALES---------- */
+.Redessociales{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* --------ESTILOS DE LA SECCION FOOTER--------- */
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #d4683a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center
+}
+
+.footer-direccion, .footer-subscribe{
+    color: #333;
+    font-family: 'Roboto';
+    font-size: 20px;  
+}
+
+.footer-direccion h2, .footer-subscribe h2{
+
+    margin-bottom: 10px;
+}
+
+.footer-subscribe input{
+    width: 250px;
+    height: 40px;
+    margin-right: -7px;
+    border-radius: 3px;
+}
+
+.footer-subscribe button{
+    font-family: 'Roboto';
+    font-size: 15px;
+    width: 100px;
+    height: 41px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: #3b3b3b;
+    border-radius: 3px;
+    cursor: pointer;
+   
+}
+    
+/* ------ESTILOS DEL POPUP------- */
+
+.overlay{
+    background-color: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: hidden;
+}
+
+.active{
+    visibility: visible;
+    
+}
+
+.pop-up{
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+    width: 600px;
+
+    transform: scale(0.7);
+    transition: .3s ease all;
+    opacity: 0;
+
+
+}
+
+.pop-up .btn-cerrar-popup{
+    display: block;
+    text-align: right;
+}
+
+.pop-up .btn-cerrar-popup .svg-inline-----fa{
+     color: #bbb;
+    transition: .3s all ease;
+}
+
+.pop-up .btn-cerrar-popup .svg-inline-----fa:hover{
+    color: #000;
+}
+
+.pop-up h3{
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #f4ac67 ;
+    opacity: 0; /* con este opacity ayudamos a que la animacion del mismo funcione mejor */
+}
+
+.pop-up p{
+    font-size: 26px;
+    margin-bottom: 40px;
+    text-align: left;
+    opacity: 0;
+}
+
+.pop-up form .contenedor-inputs{ opacity: 0;} /* con este opacity ayudamos a que la animacion del mismo funcione mejor */
+
+.pop-up form .contenedor-inputs input{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #bbb;
+
+}
+
+.pop-up form .btn-submit{
+    padding: 0 100px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: #9e5f3b;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.pop-up form .btn-submit:hover{
+    background-color: rgba(0, 0, 0, .9);
+}
+
+
+/* --------ANIMACIONES--------- */
+
+
+.pop-up.active{
+    opacity: 1; transform: scale(1);
+}
+
+.pop-up.active h3{
+    animation: entradatitulo .8s ease .5s forwards;/*  con esta palabra de decimos que se quede con las ultimas propiedades que le asignamos es decir las propiedades del keyframes */
+
+}
+
+.pop-up.active p{
+    animation: entradasubtitulo .8s ease .5s forwards;/*  con esta palabra de decimos que se quede con las ultimas propiedades que le asignamos es decir las propiedades del keyframes */
+
+}
+
+.pop-up.active .contenedor-inputs{
+    animation: entradainputs 1s ease 1s forwards;/*  con esta palabra de decimos que se quede con las ultimas propiedades que le asignamos es decir las propiedades del keyframes */
+}
+
+@keyframes entradatitulo{
+    from{
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes entradasubtitulo{
+    from{
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes entradainputs{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* @media screen and (max-width:1141px){
+
+    } */
+

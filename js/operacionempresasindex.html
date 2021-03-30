@@ -1,0 +1,294 @@
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta name="description" content="Servicios personalizados de mensajeria.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Default.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="/Content/Media/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    
+    <title>Hand2Hand Logistics</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="/Content/Utilities.js"></script>
+    
+   <script>
+    function MenuSelect(Id) {
+     $('#MnuContainer .MenuContent').each(function () {
+      if (!$(this).hasClass('Hide')) $(this).addClass('Hide');
+     });
+     $('#' + Id).removeClass('Hide');
+    }
+    function Nav_Back() {
+     //$('#CurrentPage').val('If Rslt.CurrentPage = 1 Then <text>1</Text> else (Rslt.CurrentPage - 1) End If');
+     $('#CurrentPage').val('1');
+     $('<input>').attr({ type: 'hidden', id: 'Action', name: 'Action', value: 'Search' }).appendTo('#Frm01');
+     document.getElementById('Frm01').submit();
+    }
+    function Nav_Fowd() {
+     //$('#CurrentPage').val('If Rslt.CurrentPage = Rslt.NoPages Then Rslt.NoPages else (Rslt.CurrentPage + 1) End If');
+     $('#CurrentPage').val('2');
+     $('<input>').attr({ type: 'hidden', id: 'Action', name: 'Action', value: 'Search' }).appendTo('#Frm01');;
+     document.getElementById('Frm01').submit();
+    }
+   </script>
+  
+   </head>
+   <body>
+    <div id="Page">
+     <div id="Brand"><img alt="Logo" src="/Content/Media/Logo.jpg"></div>
+     <div id="Nav">
+      
+      
+      <ul>
+       <li class="First"><a href="/System/Home.vbhtml">Inicio</a></li>
+       <li> <a href="/System/Operation"> Operación</a></li>
+       <li> <a href="/System/Querys"> Consultas</a></li>
+       <li> <a href="/System/Management">Administración</a></li>
+       <li> <a href="/System/Logout">Logout</a></li>
+      </ul>
+     
+  
+  
+     </div>
+     <div id="Cnt">
+      
+  
+  
+  
+  
+  
+  <form id="Frm01" method="post">
+      
+      <div id="VMenu" class="Menu">
+          <ul>
+           <li class="MenuSelected"><a href="/System/Empresas"> Empresas</a></li>
+           <li><a href="/System/Contratos"> Contratos</a></li>
+           <li><a href="/System/Envios"> Envios</a></li>
+           <li><a href="/System/Anomalias"> Anomalias</a></li>
+           <li><a href="/System/Imports"> Importación</a></li>
+           <li><a href="/System/EventsUpdate"> Actualización</a></li>
+           <li><a href="/System/ManageRutas"> Rutas</a></li>
+           <li><a href="/System/BBITAdmin"> BestBuy <br> Intertiendas</a></li>
+           <li><a href="/System/Mifel_Sucursales"> Mifel <br> Sucursales</a></li>
+           <li><a href="/System/EmpresaImport"> Importación <br> Empresa</a> </li>
+           <li><a href="/System/Updates/Push2GOM"> Importación <br> 2GOM Citas</a></li>
+           <li><a href="/System/Updates/ContratoAsignacion"> Reasignación de  <br> contrato</a></li>
+  
+           <li><a href="/Sepomex/Empresas"> SEPOMEX <br> Empresas</a></li>
+           <li><a href="/Sepomex/Import_Permissions"> SEPOMEX <br> Usuarios</a></li>
+           <li><a href="/Sepomex/Import_Data"> SEPOMEX <br> Importación</a></li>
+           <li><a href="/Sepomex/Export"> SEPOMEX <br> Reporte</a></li>
+           <li><a href="/System/Anomalias_Import.vbhtml"> Importación <br> de anomalías</a></li>
+          </ul>
+      </div>
+     
+  
+   <div id="MnuContainer" class="MenuContainer">
+    <div id="Cnt00" class="MenuContent"> 
+     <div class="ContainerTitle">Empresas</div>
+       <div class="ResultGroup">
+    <div>
+    <div class="ResultRow">
+     <div class="ColumnAction"></div>
+      <div class="ResultColumn">Nombre</div>
+      <div class="ResultColumn ColumnLargeSize">Razon Social</div>
+    </div>
+     
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');" style="background-color: rgb(255, 255, 255);">
+   <div class="ColumnAction"><a href="/System/Empresa/43"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  B2B Wireless  </div>
+    <div class="ResultCell">
+  B2B Wireless  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');" style="background-color: rgb(255, 255, 255);">
+   <div class="ColumnAction"><a href="/System/Empresa/47"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Banca Mifel  </div>
+    <div class="ResultCell">
+  Grupo Financiero Mifel, S.A. de C.V.  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');" style="background-color: rgb(255, 255, 255);">
+   <div class="ColumnAction"><a href="/System/Empresa/52"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  BES Servicios  </div>
+    <div class="ResultCell">
+  BES  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');" style="background-color: rgb(255, 255, 255);">
+   <div class="ColumnAction"><a href="/System/Empresa/16"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Best Buy  </div>
+    <div class="ResultCell">
+  Best Buy Stores S de RL de CV  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');" style="background-color: rgb(255, 255, 255);">
+   <div class="ColumnAction"><a href="/System/Empresa/18"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Cardtronics México SA de CV  </div>
+    <div class="ResultCell">
+  Cardtronics México SA de CV  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');" style="background-color: rgb(255, 255, 255);">
+   <div class="ColumnAction"><a href="/System/Empresa/30"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Charly  </div>
+    <div class="ResultCell">
+  Deportivos con Estilo SA de CV  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');" style="background-color: rgb(255, 255, 255);">
+   <div class="ColumnAction"><a href="/System/Empresa/33"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Charly  Recolecciones  </div>
+    <div class="ResultCell">
+  Deportivos con Estilo SA de CV  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');">
+   <div class="ColumnAction"><a href="/System/Empresa/56"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Citibanamex  </div>
+    <div class="ResultCell">
+  BMX  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');" style="background-color: rgb(255, 255, 255);">
+   <div class="ColumnAction"><a href="/System/Empresa/28"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  CTDI  </div>
+    <div class="ResultCell">
+  CTDI  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');" style="background-color: rgb(255, 255, 255);">
+   <div class="ColumnAction"><a href="/System/Empresa/27"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Diagnhos  </div>
+    <div class="ResultCell">
+  Diagnhos SA de CV  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');" style="background-color: rgb(255, 255, 255);">
+   <div class="ColumnAction"><a href="/System/Empresa/10"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Dialogue  </div>
+    <div class="ResultCell">
+  Dialogue  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');" style="background-color: rgb(255, 255, 255);">
+   <div class="ColumnAction"><a href="/System/Empresa/51"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Edenred  </div>
+    <div class="ResultCell">
+  Edenred de México SA de CV  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');" style="background-color: rgb(255, 255, 255);">
+   <div class="ColumnAction"><a href="/System/Empresa/1"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Elavon  </div>
+    <div class="ResultCell">
+  Elavon SA de CV  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');" style="background-color: rgb(255, 255, 255);">
+   <div class="ColumnAction"><a href="/System/Empresa/11"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Fuller  </div>
+    <div class="ResultCell">
+  FULLER BEAUTY COSMETICS DE MEXICO  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');" style="background-color: rgb(255, 255, 255);">
+   <div class="ColumnAction"><a href="/System/Empresa/13"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Gayosso  </div>
+    <div class="ResultCell">
+  Gayosso  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');">
+   <div class="ColumnAction"><a href="/System/Empresa/45"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Grupo Julio  </div>
+    <div class="ResultCell">
+  Grupo Julio  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');">
+   <div class="ColumnAction"><a href="/System/Empresa/3"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Hand2hand Logistics  </div>
+    <div class="ResultCell">
+  GTB S de RL de CV  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');">
+   <div class="ColumnAction"><a href="/System/Empresa/6"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Inteligensa  </div>
+    <div class="ResultCell">
+  INTELIGENSA SA DE CV  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');">
+   <div class="ColumnAction"><a href="/System/Empresa/53"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Inventario EDN  </div>
+    <div class="ResultCell">
+  Edenred  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');">
+   <div class="ColumnAction"><a href="/System/Empresa/5"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Kantar World Panel  </div>
+    <div class="ResultCell">
+  ESTUDIOS DE MERCADO LP DE MEXICO SA DE CV  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');">
+   <div class="ColumnAction"><a href="/System/Empresa/31"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  Marel Logistics   </div>
+    <div class="ResultCell">
+  Marel Logistics SA de CV  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');">
+   <div class="ColumnAction"><a href="/System/Empresa/34"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  MBE Anzures  </div>
+    <div class="ResultCell">
+  MBA  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');">
+   <div class="ColumnAction"><a href="/System/Empresa/46"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  MBE Del Valle  </div>
+    <div class="ResultCell">
+  MBV  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');">
+   <div class="ColumnAction"><a href="/System/Empresa/37"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  MBE Duraznos  </div>
+    <div class="ResultCell">
+  MBD  </div>
+  </div>
+    <div class="ResultRow" onmouseover="$(this).css('background-color','#b6ff00');" onmouseout="$(this).css('background-color','#fff');">
+   <div class="ColumnAction"><a href="/System/Empresa/49"><img alt="Detalles" src="/Content/icons/ic_assignment_black_24dp.png" width="15px"></a></div>
+    <div class="ResultCell">
+  MBE Homero  </div>
+    <div class="ResultCell">
+  MBH  </div>
+  </div>
+    </div>
+    <div class="ResultsFooter">
+     <div class="ResultsCounter">50 Resultado(s)</div>
+     <div class="ResultsPager">
+      <img alt="PageBack" src="/Content/icons/control_rewind.png" onclick="Nav_Back();" width="15px">
+      Pagina&nbsp; <input type="text" id="Pager" name="Pager" value="1" style="width:25px;"> &nbsp;de 5
+      <img alt="PageFoward" src="/Content/icons/control_fastforward.png" onclick="Nav_Fowd();" width="15px">
+     </div>
+     
+     <input id="CurrentPage" name="CurrentPage" type="hidden" value="1">
+    </div>
+   </div>
+    
+     <div style="clear:both;">
+   <div class="Button"><a href="/System/EmpresaNew">Crear Nueva</a></div>    </div>
+    </div>
+   </div>
+  </form>  
+     </div>
+     <div id="Footer">Hand2Hand Logistics © 2015</div>
+    </div>       
+   
+  
+  </body>
